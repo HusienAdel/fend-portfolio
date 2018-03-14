@@ -15,7 +15,7 @@ border:2px solid #444; text-align: center; margin-right: 5px; -webkit-transition
 }
 .social li a:hover {color: #11B4E4; border: 2px solid #11B4E4;}
 
-.header-slider {width: 100%; height: 542px; position: relative; background: url('https://s10.postimg.org/j6athv8y1/header-banner.jpg') top center no-repeat;
+.header-slider {width: 100%; height: 542px; position: relative; background: url('../img/header-banner.jpg') top center no-repeat;
 background-size: cover;
 }
 .header-slider::before {content:""; display: block; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);
@@ -109,9 +109,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#11b4e4', end
     margin: 50px auto; 
 
 }
-.featured-project-thums  li {list-style: none;  position: relative;  margin-bottom: 10px;  
-background: url('https://s10.postimg.org/52ey9kwmh/image.gif') center center no-repeat;
-}
+.featured-project-thums  li {list-style: none;  position: relative;  margin-bottom: 10px;   }
 .featured-project-thums  li img {max-width: 100%; height: 100%;}
 .featured-project-thums  li a {display: block; width: 100%; height: 100%;}
 .featured-project-thums  li a::before {content: ""; display: block; position: absolute; top: 0; left:0; background-color: rgba(0,0,0,0.2); z-index: 3;
@@ -249,5 +247,5 @@ progress[value] {width: 95%;
 
 @media screen and (-webkit-min-device-pixel-ratio: 2)
  { 
-    .header-slider  {background: url('https://s10.postimg.org/ohpq2n7w9/header-banner_2x.jpg')}
+    .header-slider  {background: url('../img/header-banner@2x.jpg')}
 }
