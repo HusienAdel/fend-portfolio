@@ -606,6 +606,6 @@ progress[value]::-webkit-progress-value {
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   .header-cover {
-    background: url('../img/header-banner@2x.jpg')
+    background-image: url('../img/header-banner@2x.jpg')
   }
 }
