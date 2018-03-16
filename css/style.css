@@ -612,9 +612,3 @@ progress[value]::-webkit-progress-value {
     margin: 0 auto;
   }
 }
-/* for device have dpi 2x */
-@media screen and (-webkit-min-device-pixel-ratio: 2) {
-  .header-cover {
-    background-image: url('../img/header-banner@2x.jpg')
-  }
-}
