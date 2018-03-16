@@ -1,6 +1,7 @@
 
 /* Portfolio projec for Udacity front end nanodegree by : Husien Adel */
 
+/* css reset layout  */
 html, body, section, ul, a, img, picture, h1, h2, h3 {
   padding: 0;
   margin: 0;
@@ -13,6 +14,7 @@ body {
   font-family: 'Open Sans', serif;
 }
 
+/* the heade rsection layout */
 .header {
   width: 100%;
   margin: 0 auto;
@@ -25,6 +27,7 @@ body {
   background-color: #fbfbfb;
 }
 
+/* the inne hedaer container */
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -41,7 +44,7 @@ body {
   font-size: 1.3rem;
   font-weight: 400;
 }
-
+/* socia media links */
 .social {
   width: 275px;
   height: 35px;
@@ -67,23 +70,23 @@ body {
   transition: all .3s;
 }
 
-#udacity-logo {
-  color: #11B4E4;
-}
 
 .social li a:hover {
   color: #11B4E4;
   border: 2px solid #11B4E4;
 }
 
+/* the header main placeholde image cover */
 .header-cover {
   width: 100%;
   height: 542px;
   position: relative;
   background: url('../img/header-banner.jpg') top center no-repeat;
+   /* thebackground size cover */
   background-size: cover;
 }
 
+/* adding some black overlay the header cover image  */
 .header-cover::before {
   content: "";
   display: block;
@@ -95,6 +98,7 @@ body {
   right: 0;
 }
 
+/* the header banner text container */
 .slider-text {
   position: absolute;
   top: 42.5%;
@@ -105,14 +109,14 @@ body {
   text-transform: capitalize;
   font-family: 'Kaushan Script', serif;
 }
-
+/* header banner heading */
 .slider-text h2 {
   color: #11B4E4;
   font-size: 3rem;
   line-height: 2rem;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
 }
-
+/* header banner paragraph */
 .slider-text p {
   font-size: 1.2rem;
   width: 50%;
@@ -120,16 +124,16 @@ body {
   line-height: 1.5;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
+/* about me container */
 .about-me {
   width: 100%;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 40px 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
 }
-
+/* about me photo  */
 .husien-photo {
   width: 123px;
   height: 123px;
@@ -139,7 +143,7 @@ body {
   margin: 0 auto;
   display: block;
 }
-
+/* about me heading title */
 .about-me h2, .my-skills h2, .my-projects-portfolio h2 {
   font-family: 'Kaushan Script', serif;
   text-transform: capitalize;
@@ -148,6 +152,7 @@ body {
   margin-top: 40px;
   text-align: center;
 }
+/* about me parahraph */
 
 .about-me p {
   text-align: center;
@@ -155,7 +160,7 @@ body {
   margin: 0 auto;
   padding: 20px 0;
 }
-
+/* hr */
 .section-hr {
   width: 100%;
   border: none;
@@ -163,11 +168,11 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   margin: 0;
 }
-
+/* skills block */
 .my-skills {
   width: 100%;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 40px 0;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -176,7 +181,7 @@ body {
   flex-wrap: wrap;
   background-color: #fbfbfb;
 }
-
+/* skills heading title */
 .my-skills h2 {
   margin-top: 0;
   text-align: center;
@@ -192,7 +197,7 @@ body {
 
 .skills-img {
   width: 50%;
-  padding-top: 50px;
+  padding-top: 40px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
@@ -204,10 +209,10 @@ body {
   display: block;
   margin: 0 auto;
 }
-
+/* skill level progress */
 .skill-level {
   width: 50%;
-  padding-top: 50px;
+  padding-top: 40px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
@@ -244,7 +249,7 @@ body {
   font-weight: 400;
   font-size: 1.1rem;
 }
-
+/* progress  */
 progress[value] {
   width: 50%;
   height: 25px;
@@ -270,14 +275,15 @@ progress[value]::-webkit-progress-value {
   background: -webkit-gradient(linear, left top, right top, from(rgba(17, 180, 228, 1)), to(rgba(32, 144, 177, 1)));
   background: linear-gradient(to right, rgba(17, 180, 228, 1) 0%, rgba(32, 144, 177, 1) 100%);
 }
-
+/* my projects portfolio container */
 .my-projects-portfolio {
   width: 100%;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 40px 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+/* my projects portfolio thums */
 
 .featured-project-thums {
   display: -webkit-box;
@@ -298,9 +304,10 @@ progress[value]::-webkit-progress-value {
   margin-bottom: 10px;
 }
 
-.featured-project-thums li img {
+.featured-project-thums li > a > img {
   max-width: 100%;
   height: 100%;
+  width: 100%;
 }
 
 .featured-project-thums li a {
@@ -326,7 +333,7 @@ progress[value]::-webkit-progress-value {
 .featured-project-thums li a:hover::before {
   background-color: rgba(0, 0, 0, 0.3);
 }
-
+/* foote container */
 .footer {
   width: 100%;
   height: 150px;
@@ -365,6 +372,7 @@ progress[value]::-webkit-progress-value {
   text-shadow: 0 0 1px #fff;
 }
 
+/* mobile media max-width 300px */
 @media screen and (max-width:300px) {
   body {
     overflow-x: hidden
@@ -453,10 +461,10 @@ progress[value]::-webkit-progress-value {
     margin: 0 auto;
   }
 }
-
+/* mobile min width 301px and max width 768 */
 @media screen and (min-width:301px) and (max-width:768px) {
   html {
-    font-size: 14px;
+    font-size: 13px;
   }
   .container {
     width: 100%;
@@ -538,6 +546,7 @@ progress[value]::-webkit-progress-value {
   }
 }
 
+/* for bigger media between 769px and 1024px */
 @media screen and (min-width:769px) and (max-width:1024px) {
   html {
     font-size: 15px;
@@ -603,7 +612,7 @@ progress[value]::-webkit-progress-value {
     margin: 0 auto;
   }
 }
-
+/* for device have dpi 2x */
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   .header-cover {
     background-image: url('../img/header-banner@2x.jpg')
